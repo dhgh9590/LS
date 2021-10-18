@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+#nav{width: 100%; height: 100px; position: fixed; z-index: 9999; transition: all 0.4s;}
+#nav.active{background: #fff; }
+
+/* nav */
+.nav{height: 100px;display: flex; justify-content: space-between; align-items: center;}
+.nav .logo{margin-left: 50px;}
+.nav .logo img{width: 288px;height: 52px;}
+
+#nav.active .nav .menu > ul > li > a > em{color: #222;}
+
+.nav .menu{}
+.nav .menu > ul{display: flex; }
+.nav .menu > ul > li{position: relative; width: 130px;}
+.nav .menu > ul > li.active {background: #04BEFE; transition: all 0.4s;}
+.nav .menu > ul > li > a{display: block; box-sizing: border-box; text-align: center;}
+.nav .menu > ul > li > a > em{font-size: 20px;font-weight: 600; line-height: 100px; color: #fff;}
+
+
+
+.menu_list{position: absolute; top: 100%;left: 0; text-align: center; width: 130px; display: none;}
+.menu_list li{ border: 1px solid #ddd; background: #fff; transition: all 0.4s; }
+.menu_list li:hover{background: #04BEFE; border: 1px solid #04BEFE;}
+.menu_list li a{color: #222; display: block; transition: all 0.3s; }
+.menu_list li:hover a{color: #fff;}
+.menu_list li a em{font-size: 16px; padding: 10px 0; display: block;} 
+
+.nav .sub_menu{}
+.nav .sub_menu > ul{display: flex; text-align: center;}
+.nav .sub_menu > ul > li{position: relative; transition: all 0.3s ease-in;}
+.nav .sub_menu > ul > li:nth-child(3){ margin: 0 50px 0 125px;}
+.nav .sub_menu > ul > li.click:nth-child(3){background: #0470DC; }
+.nav .sub_menu > ul > li > a{color: #fff; padding: 0 15px; display: block; transition: all 0.3s;}
+.nav .sub_menu > ul > li > a:hover{color: #04BEFE;}
+.nav .sub_menu > ul > li > a > em{font-size: 16px;font-weight: 600; line-height: 100px;}
+.nav .sub_menu > ul > li > a > strong{font-size: 18px;font-weight: bold; line-height: 100px;}
+.nav .sub_menu > ul > li > a > strong > i{ margin-left: 7px;}
+.nav .sub_menu > ul > li > a > strong > i:nth-child(2){display: none;}
+.nav .sub_menu > ul > li.click > a > strong{color: #fff;}
+.nav .sub_menu > ul > li.click > a > strong > i:nth-child(1){display: none;}
+.nav .sub_menu > ul > li.click > a > strong > i:nth-child(2){display: inline-block;}
+
+
+#nav.active .nav .sub_menu ul li a{color: #222;}
+
+.sub_menu_list{position: absolute; top: 100%; left: 0; right: 0; background: #0470DC; display: none; z-index: 1000;}
+.sub_menu_list li{margin: 5px 0;}
+.sub_menu_list li a{color: #fff; display: block;}
+.sub_menu_list li a span{font-size: 14px;}
+
+
+
+
+
+
+
+
+
+
+

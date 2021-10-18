@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sub3</title>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/sub3.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/main.js"></script>
+</head>
+<body>
+    <? include "../nav/nav.html";?>
+    <header id="header">
+        <div class="container">
+            <div class="header">
+                <h2>홍보센터</h2>
+                <span>promotion</span>
+            </div>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <aside id="aside">
+        <div class="container">
+            <div class="aside">
+                <div class="home">
+                    <a href="../main/index.html"><i class="fas fa-home"></i></a>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <em>홍보센터<i class="fas fa-angle-down"></i></em>
+                            <ul class="menu-list">
+                                <li><a href="../sub1/sub1.html"><em>기업소개</em></a></li>
+                                <li><a href="../sub2/sub2.html"><em>제품정보</em></a></li>
+                                <li><a href="../sub4/sub4.html"><em>인재경영</em></a></li>
+                                <li><a href="../sub5/sub5.html"><em>고객지원</em></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sub_menu">
+                    <ul>
+                        <li>
+                            <em>NEWS<i class="fas fa-angle-down"></i></em>
+                            <ul class="sub_menu-list">
+                                <li><a href="#"><em>PR자료실</em></a></li>
+                                <li><a href="#"><em>CI</em></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <!-- //aside -->
+
+    <main id="main">
+        <section id="section1"></section>
+        <!-- //section1 -->
+
+    </main>
+    <!-- //main -->
+    <? include "../footer/footer.html";?>
+
+    <script>
+        $(".aside > .menu > ul > li").click(function(){
+            $(this).find(".menu-list").slideToggle();
+            $(this).toggleClass("click");
+        });
+        $(".aside > .sub_menu > ul > li").click(function(){
+            $(this).find(".sub_menu-list").slideToggle();
+            $(this).toggleClass("click");
+        });
+
+    </script>
+    
+</body>
+</html>

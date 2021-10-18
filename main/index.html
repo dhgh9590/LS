@@ -8,6 +8,8 @@
 
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/slick.css">
     <link rel="stylesheet" href="../css/font-awesome.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
@@ -15,20 +17,266 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="../js/slick.min.js"></script>
+    <script src="../js/main.js"></script>
+
 
 </head>
 <body>
-    <nav id="nav"></nav>
-    <!-- //nav -->
-    <header id="header"></header>
+    <? include "../nav/nav.html";?>
+
+    <header id="header">
+        <div class="banner">
+            <!-- 이미지 슬라이드 -->
+            <div class="slider">
+                <div>
+                    <figure>
+                        <img src="../img/main/banner1.jpg" alt="이미지1">
+                        <figcaption>
+                            <em>세계 <strong>최고</strong> 수준의 케이블 기술이<br>
+                                미래를 선도합니다</em>
+                            <span>세계 최고 수준의 첨단 전력 케이블 개발부터 시공,컨설팅까지<br>
+                                최초의 도전으로 최고의 기술을 실현하는 기업<br>
+                                LS전선이 케이블의 미래를 열어갑니다.</span>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <figure>
+                        <img src="../img/main/banner2.jpg" alt="이미지1">
+                        <figcaption>
+                            <em>다양한 산업현장에서<br> <strong>고객의 가치</strong>를 더하고 있습니다.</em>
+                            <span>철도와 자동차,선박과 해양 플랜트,<br> 
+                                다양한 산업현장에서 최고의 기술로가치를 더하고 있습니다.<br>
+                                LS전선이 기술로 더 풍요롭고 행복한 세상을 만들어 갑니다.</span>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <figure>
+                        <img src="../img/main/banner3.jpg" alt="이미지1">
+                        <figcaption>
+                            <em>나와 우리,<br>
+                            세상과 세상을 <strong>연결</strong> 합니다.</em>
+                            <span>다양한 멀티미디어의 활용과 빠르고 정확한 서비스,<br>
+                                끊김없는 인프라 구축을 위해 첨단 통신 광케이블부터 네트워크 솔루션까지<br>
+                                LS전선이 더 빠르고 윤택한 세상을 이어갑니다.</span>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <figure>
+                        <img src="../img/main/banner4.jpg" alt="이미지1">
+                        <figcaption>
+                            <em>기본이 다른 소재기술<br>
+                                오늘도<strong>최고</strong>를 만듭니다.</em>
+                            <span>제조업의 기본이자 근간을 이루는 소재<br>
+                                근본부터 완전한 기술을 선보이는 기업<br>
+                                LS전선이 더 완벽한 내일을 열어갑니다.</span>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <figure>
+                        <img src="../img/main/banner5.jpg" alt="이미지1">
+                        <figcaption>
+                            <em>선으로 하나되는 세상을 만듭니다<br>
+                                선으로 더 가치있는<strong>미래</strong>를 열어갑니다.</em>
+                            <span>사람을 잇고, 세상을 잇고, 미래를 잇는 꿈의선-<br>
+                                LS전선이 대한민국 대표 기업을 넘어 글로벌 기업으로서<br>
+                                선으로 하나되는 세상, 선으로 더 가치있는 미래를 열어갑니다.</span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <!-- //이미지 슬라이드 -->
+        </div>
+    </header>
     <!-- //header -->
     <main id="main">
-        <section id="section1"></section>
+        <section id="section1">
+            <div class="container">
+                <div class="section1">
+                    <h2>SOLUTION</h2>
+                    <div class="imte_box">
+                        <div class="item item1">
+                            <div class="img_box"></div>
+                            <div class="text_box">
+                                <h3>전력</h3>
+                                <p>전력 케이블 분야에서 세계적 수준의 기술력을 보유</p>
+                            </div>
+                            <div class="circle">
+                                <a href="#"><em>Enter</em></a>
+                            </div>
+                        </div>
+                        <div class="item item2">
+                            <div class="img_box"></div>
+                            <div class="text_box">
+                                <h3>풍력</h3>
+                                <p>신재생 에너지의 대표주자 풍력발전!</p>
+                            </div>
+                            <div class="circle">
+                                <a href="#"><em>Enter</em></a>
+                            </div>
+                        </div>
+                        <div class="item item3">
+                            <div class="img_box"></div>
+                            <div class="text_box">
+                                <h3>철도</h3>
+                                <p>철도의 원활한 운행을 위해 안정적으로 전력을 공급</p>
+                            </div>
+                            <div class="circle">
+                                <a href="#"><em>Enter</em></a>
+                            </div>
+                        </div>
+                        <div class="item item4">
+                            <div class="img_box"></div>
+                            <div class="text_box">
+                                <h3>선박</h3>
+                                <p>한정된 공간에서도 원활하게 전력과 통신 시스템을 구축</p>
+                            </div>
+                            <div class="circle">
+                                <a href="#"><em>Enter</em></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- //section1 -->
+        <section id="section2">
+            <div class="container">
+                <div class="section2">
+                    <div class="text_box">
+                        <h2>선으로 하나 되는 세상,<br>
+                            Enable the Cabled World!
+                        </h2>
+                        <p>LS전선이 선(線), 그 이상의 가치를 실현합니다.</p>
+                    </div>
+                    <div class="itex_box">
+                        <div class="top">
+                            <div class="item">
+                                <div class="text">
+                                    <h3>해저 케이블</h3>
+                                    <p>미국 최초 해상풍력단지에 해저 케이블 공급</p>
+                                </div>
+                                <div class="more">
+                                    <a href="#"><em>more</em></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="item">
+                                <div class="text">
+                                    <h3>배전 케이블</h3>
+                                    <p>신재생 에너지 프로젝트 중저압 전력선 공급</p>
+                                </div>
+                                <div class="more">
+                                    <a href="#"><em>more</em></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="text">
+                                    <h3>초고압 케이블</h3>
+                                    <p>쿠웨이트 신도시 대규모 송전망 구축</p>
+                                </div>
+                                <div class="more">
+                                    <a href="#"><em>more</em></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //section2 -->
+        <section id="section3">
+            <div class="container">
+                <div class="section3">
+                    <h2>company</h2>
+                    <div class="box_list">
+                        <div class="box box1">
+                            <div class="text">
+                                <a href="#">
+                                    <h3>경영철학</h3>
+                                    <p>LSpartnership은 LS의 경영철학으로 '함께하여 더 큰 가치'를 만들어내는 것입니다</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="box box2">
+                            <div class="text">
+                                <a href="#">
+                                    <h3>투자정보</h3>
+                                    <p>재무상태표를 포함한 제13기 재무제표는 한국채택국제회계기준에 따라 중요성의 관점에서 공정하게 표시하고 있습니다.</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="box box3">
+                            <div class="text">
+                                <a href="#">
+                                    <h3>LS전선 Way</h3>
+                                    <p>LS전선은 전력과 통신 기술로 전 세계인을 하나로 이어주고 있으며, 세상을 풍요롭고 편리하게 만들고 있습니다.</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //section3 -->
+        <section id="section4">
+            <div class="container">
+                <div class="section4">
+                    <div class="item_box">
+                        <div class="item item1">
+                            <a href="#">
+                                <img src="../img/main/section3_4.jpg" alt="">
+                                <div class="text">
+                                    <em>Talent Management</em>
+                                    <h3>인재 경영</h3>
+                                    <span>more</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item item2">
+                            <a href="#">
+                                <img src="../img/main/section3_5.jpg" alt="">
+                                <div class="text">
+                                    <em>social contribution</em>
+                                    <h3>사회 공헌</h3>
+                                    <span>more</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item item3">
+                            <a href="#">
+                                <img src="../img/main/section3_6.jpg" alt="">
+                                <div class="text">
+                                    <em>News</em>
+                                    <h3>뉴스</h3>
+                                    <span>more</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item item4">
+                            <a href="#">
+                                <img src="../img/main/section3_7.jpg" alt="">
+                                <div class="text">
+                                    <em>global office</em>
+                                    <h3>글로벌 오피스</h3>
+                                    <span>more</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //section4 -->
     </main>
     <!-- //main -->
-    <footer id="footer"></footer>
-    <!-- //footer -->
+    <? include "../footer/footer.html";?>
+
     
 
 
@@ -36,6 +284,33 @@
 
     
     <script>
+        $(".footer strong").click(function(e){
+            e.preventDefault();
+            $("html,body").animate({scrollTop : 0},600);
+        });
+
+        $(".section2 .itex_box .item").mouseenter(function(){
+            $(this).addClass("active");
+        }).mouseleave(function(){
+            $(this).removeClass("active");
+        });
+
+
+        //이미지 슬라이더
+        $(".slider").slick({
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            arrows: true,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        autoplay:false,
+                        }
+                }
+            ]
+        });
 
     </script>
 </body>
