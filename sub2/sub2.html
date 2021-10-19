@@ -17,7 +17,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="../js/slick.min.js"></script>
     <script src="../js/main.js"></script>
+    <script src="../js/sub.js"></script>
+
 </head>
+<!-- 2021.10.19 end-->
 <body>
     <? include "../nav/nav.html";?>
     <header id="header">
@@ -68,22 +71,106 @@
     <!-- //aside -->
 
     <main id="main">
-        <section id="section1"></section>
+        <section id="section1">
+            <div class="container">
+                <div class="section1">
+                    <div class="text clearfix">
+                        <h2>제품소개</h2>
+                        <p>고객의 일상에서 빛과 전기를 편리하고 자유롭게 사용할 수 있도록 돕는 에너지 케이블, 다양한 현장에서 그 가치를 발하여 기업의 가치를 더해주는 산업전선, 언제 어디서나 빠르고 안정적으로 정보를 주고 받을 수 있는 인프라를 구축하는 통신 제품, 산업의 기초 분야인 소재 사업까지, LS전선의 탁월한 기술력과 노하우를 통해 개발 생산된 제품은 세계 시장에서 그 가치를 인정받고 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- //section1 -->
+        <section id="section2">
+            <div class="container">
+                <div class="section2">
+                    <div class="cont_box">
+                        <div class="box1 box">
+                            <div class="img_box">
+                                <div class="icon_box">
+                                    <i class="fas fa-charging-station"></i>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <h2>에너지</h2>
+                                <em>energy</em>
+                            </div>
+                            <div class="list">
+                                <ul>
+                                    <li><a href="#"><em>초고압 케이블</em><i class="fas fa-angle-right"></i></a></li>
+                                    <li><a href="#"><em>해저 케이블</em><i class="fas fa-angle-right"></i></a></li>
+                                    <li><a href="#"><em>가공선</em><i class="fas fa-angle-right"></i></a></li>
+                                    <li><a href="#"><em>배전 케이블</em><i class="fas fa-angle-right"></i></a></li>
+                                    <li><a href="#"><em>부스덕트</em><i class="fas fa-angle-right"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="box2 box">
+                            <div class="img_box">
+                                <div class="icon_box">
+                                    <i class="fas fa-network-wired"></i>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <h2>산업전선</h2>
+                                <em>industrial front</em>
+                            </div>
+                            <div class="list">
+                                <ul>
+                                    <li><a href="#"><em>산업용 특수 케이블</em><i class="fas fa-angle-right"></i></a></li>
+                                    <li><a href="#"><em>산업기기</em><i class="fas fa-angle-right"></i></a></li>
+                                    <li><a href="#"><em>자동차 케이블</em><i class="fas fa-angle-right"></i></a></li>
+                                    <li><a href="#"><em>튜브</em><i class="fas fa-angle-right"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="box3 box">
+                            <div class="img_box">
+                                <div class="icon_box">
+                                    <i class="fas fa-satellite-dish"></i>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <h2>통신</h2>
+                                <em>communication</em>
+                            </div>
+                            <div class="list">
+                                <ul>
+                                    <li><a href="#"><em>광통신</em><i class="fas fa-angle-right"></i></a></li>
+                                    <li><a href="#"><em>통합배선</em><i class="fas fa-angle-right"></i></a></li>
+                                    <li><a href="#"><em>RF Feeder 시스템</em><i class="fas fa-angle-right"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="box4 box">
+                            <div class="img_box">
+                                <div class="icon_box">
+                                    <i class="fas fa-atom"></i>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <h2>소재</h2>
+                                <em>소재</em>
+                            </div>
+                            <div class="list">
+                                <ul>
+                                    <li><a href="#"><em>Copper Rod</em><i class="fas fa-angle-right"></i></a></li>
+                                    <li><a href="#"><em>권선</em><i class="fas fa-angle-right"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //section2 -->
 
     </main>
     <!-- //main -->
     <? include "../footer/footer.html";?>
 
     <script>
-        $(".aside > .menu > ul > li").click(function(){
-            $(this).find(".menu-list").slideToggle();
-            $(this).toggleClass("click");
-        });
-        $(".aside > .sub_menu > ul > li").click(function(){
-            $(this).find(".sub_menu-list").slideToggle();
-            $(this).toggleClass("click");
-        });
 
     </script>
     

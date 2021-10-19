@@ -21,6 +21,7 @@
 
 
 </head>
+<!-- 2021.10.19 end-->
 <body>
     <? include "../nav/nav.html";?>
 
@@ -284,10 +285,26 @@
 
     
     <script>
-        $(".footer strong").click(function(e){
-            e.preventDefault();
-            $("html,body").animate({scrollTop : 0},600);
+        $(window).scroll(function(){
+            let scrollTop = $(window).scrollTop() + $(window).height() / 2;
+            let sec = $(".sec");
+            
+            if(scrollTop >= $("#section1").offset().top -250){
+                $("#section1").addClass("active");
+            }
+            if(scrollTop >= $("#section2").offset().top -100){
+                $("#section2").addClass("active");
+            }
+            if(scrollTop >= $("#section3").offset().top -100){
+                $("#section3").addClass("active");
+            }
+            if(scrollTop >= $("#section4").offset().top -100){
+                $("#section4").addClass("active");
+            }
+
+            
         });
+
 
         $(".section2 .itex_box .item").mouseenter(function(){
             $(this).addClass("active");
