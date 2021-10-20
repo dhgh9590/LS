@@ -10,7 +10,7 @@
 .footer .item_list{display: flex; justify-content: space-between; padding-top: 85px; text-align: center;}
 .footer .item_list .footer_logo{width: 116px;height: 35px;background: url(../img/main/footer.png)no-repeat center / cover;}
 
-.footer .item_list .text_box{margin-left: -600px; margin-top: 10px;}
+.footer .item_list .text_box{margin-left: -31.2500vw; margin-top: 10px;}
 .footer .item_list .text_box ul{display: flex;}
 .footer .item_list .text_box ul li{margin: 0 15px;}
 .footer .item_list .text_box ul li a{}
@@ -28,7 +28,16 @@
 .footer strong i{font-size: 30px;color: #000;text-align: center; display: block; line-height: 50px;}
 
 
-
+@media (max-width:767px){
+    .footer .item_list .footer_logo{width: 95px;height: 29px;margin-left: 5px;}
+    .footer .item_list .text_box{margin-left: 0px;}
+    .footer .item_list .text_box ul li{margin: 0 2px;}
+    .footer .item_list .icon_box{margin-right: 5px;}
+    .footer .item_list .icon_box ul li{margin-left: 5px;}
+    .footer .item_list .icon_box ul li a i{font-size: 20px;}
+    .footer p{margin-left: 5px;}
+    .footer strong{margin-right: 5px;}
+}
 
 
 

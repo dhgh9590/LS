@@ -3,9 +3,10 @@
 body{font-family: 'Noto Sans KR', sans-serif;}
 
 /* layout */
-#header{width: 100%; height: 520px; background: url(../img/sub1/banner1.jpg) no-repeat center / cover;}
+#header{width: 100%; height: 520px; background: url(../img/sub5/banner.jpg) no-repeat center / cover;}
 #aside{width: 100%;height: 80px;background: #ebebeb;}
-#main{width: 100%; height: 1500px;}
+#main{width: 100%;}
+#section2{width: 100%;height: 400px;  background: url(../img/sub5/section2.jpg)center -300px / cover;}
 
 /* 가운데 영역 */
 .container{max-width: 1280px; margin: 0 auto;}
@@ -43,15 +44,63 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .aside .sub_menu > ul > li > em i{font-size: 20px;margin-left: 10px;transition: all 0.4s;}
 .aside .sub_menu > ul > li.click > em i{transform: rotate(-180deg);}
 
-
 .sub_menu-list{text-align: center; display: none;}
 .sub_menu-list li{padding: 5px 0; background: #fff; border: 1px solid #ccc;}
 .sub_menu-list li a{}
 .sub_menu-list li a em{font-size: 20px;font-weight: 400;}
 
+/* section1 */
+.section1{}
+.section1 .title{margin-top: 120px;}
+.section1 .title h2{font-size: 40px;font-weight: 600;padding-left: 20px; position: relative;}
+.section1 .title h2::before{content: "";width: 5px;height: 34px;background: #007eff; position: absolute; top: 53%;left: 0; transform: translateY(-50%);}
+.section1 .title p{font-size: 20px;font-weight: 400;}
+.section1 .title span{width: 1280px;height: 2px; background: #000; display: block; margin-top: 50px;}
 
+.section1 .faq{}
+.section1 .faq .item{cursor: pointer; display: none;}
+.section1 .faq .item.active{display: block;}
+.section1 .faq .item .questions:hover {color: #04BEFE;}
+.section1 .faq .item span{width: 1280px;height: 1px;background: #ccc; display: block;}
+.section1 .faq .item .questions{width: 100%; height: 110px; display: flex; align-items: center; justify-content: space-between; transition: all 0.2s;}
+.section1 .faq .item .questions.active{color: #0470DC;}
+.section1 .faq .item .wrap{padding: 30px; display: flex; align-items: center;}
+.section1 .faq .item .icon{width: 50px;height: 50px;border-radius: 50%; position: relative;}
+.section1 .faq .item .questions .icon{background: #233873; }
+.section1 .faq .item .icon em{ font-size: 25px;font-weight: bold; color: #fff; position: absolute; top: 50%;left: 50%; transform: translate(-50%,-50%);}
+.section1 .faq .item .text{margin-left: 50px;}
+.section1 .faq .item .text em{font-size: 22px;font-weight: 600;}
+.section1 .faq .item .questions .plus{padding-right: 30px;}
+.section1 .faq .item .questions .plus i{font-size: 30px; }
+.section1 .faq .item .questions .plus i:nth-child(2){display: none;}
 
+.section1 .faq .item .questions.active .plus i:nth-child(1){display: none;}
+.section1 .faq .item .questions.active .plus i:nth-child(2){display: block;}
 
+.section1 .faq .item .answer{width: 100%;height: 110px;background: #efefef; display: none;}
+.section1 .faq .item .answer .wrap .text em{font-size: 18px;font-weight: 400;}
+.section1 .faq .item .answer.active{display: block;}
+.section1 .faq .item .answer span{width: 1280px;height: 1px;background: #ccc; display: block;}
+.section1 .faq .item .answer .icon{background: #e84343; }
 
+.section1 .btn{text-align: center; line-height: 30px; margin-top: 50px;}
+.section1 .btn ul{display: flex; justify-content: center;}
+.section1 .btn ul li{margin-left: -1px; width: 30px;height: 30px; display: block;border: 1px solid #000; cursor: pointer; transition: all 0.2s;}
+.section1 .btn ul li.active{background: #000;}
+.section1 .btn ul li.active a{ color: #fff;}
+.section1 .btn ul li a em{font-size: 16px;font-weight: 300;}
 
+/* section2 */
+.section2{height: 400px; display: flex; justify-content: space-around; align-items: center; margin-top: 100px; color: #fff;}
+.section2 .US_box{}
+.section2 .US_box h2{font-size: 50px;font-weight: bold;}
+.section2 .US_box em{font-size: 22px;font-weight: 400; float: right;}
+
+.section2 .line_box{width: 600px;height: 1px;background: #ccc;}
+
+.section2 .question_box{}
+.section2 .question_box .border{border: 1px solid #fff; padding: 15px 100px; position: relative; display: inline-flex; color: #fff; overflow: hidden;}
+.section2 .question_box .border::before{content: "";position: absolute;top: var(--y);left: var(--x); transform: translate(-50%,-50%); width: 0px;height: 0px;background: linear-gradient(to right, #25AAE1 0%, #3f86ED 100%); border-radius: 50%;transition: width 0.6s,height 0.6s;}
+.section2 .question_box .border:hover:before{width: 700px;height: 700px;}
+.section2 .question_box a em{font-size: 18px;font-weight: 400; position: relative; z-index: 1;}
 

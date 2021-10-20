@@ -29,5 +29,10 @@ $(document).ready(function(){
         e.preventDefault();
         $("html,body").animate({scrollTop : 0},600);
     });
+    
+    $(".hamburger_icon").click(function(){
+        $(this).toggleClass("active");
+        $(".mobile_nav .menu").toggleClass("active");
+    });
 
 });

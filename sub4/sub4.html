@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="../css/slick.css">
     <link rel="stylesheet" href="../css/font-awesome.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="../js/slick.min.js"></script>
@@ -112,7 +111,7 @@
                         </div>
                     </div>
                     <div class="item_list">
-                        <span></span>
+                        <span class="line1 line"></span>
                         <div class="item item1">
                             <div class="img_box">
                                 <img src="../img/sub4/section1_1.jpg" alt="">
@@ -130,7 +129,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <span></span>
+                        <span class="item item2"></span>
                         <div class="item item2">
                             <div class="text_box">
                                 <h3>국제화 교육</h3>
@@ -150,7 +149,7 @@
                                 <img src="../img/sub4/section1_2.jpg" alt="">
                             </div>
                         </div>
-                        <span></span>
+                        <span class="item item3"></span>
                         <div class="item item3">
                             <div class="img_box">
                                 <img src="../img/sub4/section1_3.jpg" alt="">
@@ -167,7 +166,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <span></span>
+                        <span class="item item4"></span>
                         <div class="item item4">
                             <div class="text_box">
                                 <h3>신입사원 집중 교육</h3>
@@ -178,11 +177,13 @@
                                     <li><em>- 입문교육, OJT, 문제해결 과정, 비전 설정</em></li>
                                     <li><em>- 멘토링 제도 </em></li>
                                     <li><em>- 신입사원들은 입사 후 아래와 같이 1년간 교육을 받습니다.</em></li>
-                                    <p> - 입문교육 [10일]<br>
+                                    <li>
+                                        <p> - 입문교육 [10일]<br>
                                         - OJT : 파견부서 OJT, 소속부서 OJT, 연구 과제 수행 [8주]<br>
                                         - Power up 과정 : 문제해결 과정 [3일]<br>
                                         - Todding : 업무 수행, 멘토링 [8~9개월]<br>
                                         - Follow up : 비전 설정 과정 (MVP) [3일]</p>
+                                    </li>
                                 </ul>
                             </div>
                             <div class="img_box">
@@ -212,6 +213,7 @@
 
                 if(scrollTop >= $(".item_list > .item"+i).offset().top){
                     $(".item_list > .item"+i).addClass("active");
+                    $(".line"+i).addClass("active");
                 }
             }
 

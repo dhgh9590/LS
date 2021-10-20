@@ -123,10 +123,64 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 
 .section4 .item_box .item:hover .text{color: #5dbfeb;}
 
+@media (max-width:1500px){
+    /* banner */
+    .slider figcaption {left: 30.0000vw;}
+    .slider figcaption em {font-size: 2.6667vw;}
+    .slider figcaption span {font-size: 1.6667vw;}
+}
 
 
+@media (max-width:1023px){
+    /* banner */
+    .slider figcaption {left: 24.4379vw;}
+    .slider figcaption em {font-size: 2.9326vw;}
+    .slider figcaption span {font-size: 1.9550vw;}
+
+    .slider .slick-prev {left: 3%;}
+    .slider .slick-next {right: 3%;}
 
 
+    /* section1 */
+    #section1{height: 850px;}
+    .section1 .imte_box{display: grid; justify-content: space-around; grid-template-columns: 200px 200px; grid-template-rows: 300px 300px; margin-top: 50px;}
+    .section1 .imte_box .item{width: 200px;height: 300px;margin: 0 5px; transition: all 0.6s;}
+
+    /* section2 */
+    #section2{height: 900px;}
+    .section2 .text_box{padding-top: 150px; margin-left: 10px; }
+    .section2 .itex_box{top: 170px; right: 10px;}
+
+    /* section4 */
+    #section4{height: 950px;}
+    .section4 .item_box{grid-template-columns: 78.2014vw; grid-template-rows: 180px 180px 180px 180px;}
+    .section4 .item_box .item{width: 78.2014vw;}
+    .section4 .item_box .item img{width: 78.2014vw;}
+}
+
+@media (max-width:767px){
+    
+    /* banner */
+    #header{height: 90vh;}
+    .slider {height: 90vh;}
+    .slider figure img{height: 90vh; object-fit: cover;}
+    .slider figcaption {left: 50%; text-align: center; transform: translate(-50%,-50%);}
+    .slider figcaption em {font-size: 5.2151vw;}
+    .slider figcaption span {font-size: 3.2595vw;}
+
+    /* section2 */
+    #section2{height: 1450px;}
+    .section2 .text_box{padding-top: 100px; margin-left: 50px;}
+    .section2 .itex_box{top: 440px; left: 42%; transform: translateX(-50%);}
+    .section2 .itex_box .top{display: flex;justify-content: center;flex-direction: column;}
+    .section2 .itex_box .bottom{display: flex; flex-direction: column;}
+    .section2 .itex_box .bottom .item:nth-child(2){margin-left: 0px; margin-top: -1px;}
+
+    /* section3 */
+    #section3{height: 1200px;}
+    .section3 .box_list{align-items: center; flex-direction: column;}
+    .section3 .box_list .box{width: 78.2269vw;height: 320px;margin: 10px 0;}
+}
 
 
 
