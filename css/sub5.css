@@ -1,5 +1,5 @@
 @charset "utf-8";
-/* 2021.10.19 end*/
+/* 2021.10.21end*/
 body{font-family: 'Noto Sans KR', sans-serif;}
 
 /* layout */
@@ -55,13 +55,13 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .section1 .title h2{font-size: 40px;font-weight: 600;padding-left: 20px; position: relative;}
 .section1 .title h2::before{content: "";width: 5px;height: 34px;background: #007eff; position: absolute; top: 53%;left: 0; transform: translateY(-50%);}
 .section1 .title p{font-size: 20px;font-weight: 400;}
-.section1 .title span{width: 1280px;height: 2px; background: #000; display: block; margin-top: 50px;}
+.section1 .title span{max-width: 1280px;height: 2px; background: #000; display: block; margin-top: 50px;}
 
 .section1 .faq{}
 .section1 .faq .item{cursor: pointer; display: none;}
 .section1 .faq .item.active{display: block;}
 .section1 .faq .item .questions:hover {color: #04BEFE;}
-.section1 .faq .item span{width: 1280px;height: 1px;background: #ccc; display: block;}
+.section1 .faq .item span{max-width: 1280px;height: 1px;background: #ccc; display: block;}
 .section1 .faq .item .questions{width: 100%; height: 110px; display: flex; align-items: center; justify-content: space-between; transition: all 0.2s;}
 .section1 .faq .item .questions.active{color: #0470DC;}
 .section1 .faq .item .wrap{padding: 30px; display: flex; align-items: center;}
@@ -80,7 +80,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .section1 .faq .item .answer{width: 100%;height: 110px;background: #efefef; display: none;}
 .section1 .faq .item .answer .wrap .text em{font-size: 18px;font-weight: 400;}
 .section1 .faq .item .answer.active{display: block;}
-.section1 .faq .item .answer span{width: 1280px;height: 1px;background: #ccc; display: block;}
+.section1 .faq .item .answer span{max-width: 1280px;height: 1px;background: #ccc; display: block;}
 .section1 .faq .item .answer .icon{background: #e84343; }
 
 .section1 .btn{text-align: center; line-height: 30px; margin-top: 50px;}
@@ -92,15 +92,42 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 
 /* section2 */
 .section2{height: 400px; display: flex; justify-content: space-around; align-items: center; margin-top: 100px; color: #fff;}
-.section2 .US_box{}
-.section2 .US_box h2{font-size: 50px;font-weight: bold;}
-.section2 .US_box em{font-size: 22px;font-weight: 400; float: right;}
+.section2 .US_box{margin-left: 10px;}
+.section2 .US_box h2{font-size: 50px;font-weight: bold; width: 270px;}
+.section2 .US_box em{font-size: 22px;font-weight: 400; float: right; }
 
 .section2 .line_box{width: 600px;height: 1px;background: #ccc;}
 
-.section2 .question_box{}
-.section2 .question_box .border{border: 1px solid #fff; padding: 15px 100px; position: relative; display: inline-flex; color: #fff; overflow: hidden;}
+.section2 .question_box{ margin-right: 10px;}
+.section2 .question_box .border{width: 340px; text-align: center; border: 1px solid #fff; padding: 15px 0px; position: relative; display: block; color: #fff; overflow: hidden;}
 .section2 .question_box .border::before{content: "";position: absolute;top: var(--y);left: var(--x); transform: translate(-50%,-50%); width: 0px;height: 0px;background: linear-gradient(to right, #25AAE1 0%, #3f86ED 100%); border-radius: 50%;transition: width 0.6s,height 0.6s;}
 .section2 .question_box .border:hover:before{width: 700px;height: 700px;}
 .section2 .question_box a em{font-size: 18px;font-weight: 400; position: relative; z-index: 1;}
+
+@media (max-width:1500px){
+
+}
+
+@media (max-width:1023px){
+    
+}
+
+@media (max-width:767px){
+
+    .section1 .faq .item .questions{width: 100%; height: 160px; display: flex; align-items: center; justify-content: space-between; transition: all 0.2s;}
+    .section1 .faq .item .answer{width: 100%;height: 110px;background: #efefef; display: none;}
+    .section1 .faq .item .wrap{padding: 30px 10px; display: flex; align-items: center;}
+    .section1 .faq .item .text{margin-left: 10px; max-width: 300px;}
+    .section1 .faq .item .icon{min-width: 50px;min-height: 50px;border-radius: 50%; position: relative;}
+
+
+    .section2{height: 400px; display: grid; justify-content: center; align-items: center;}
+    .section2 .US_box em{float: left; }
+    .section2 .line_box{display: none;}
+}
+
+
+
+
+
 

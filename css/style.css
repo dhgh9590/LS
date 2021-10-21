@@ -1,5 +1,5 @@
 @charset "utf-8";
-/* 2021.10.19 end*/
+/* 2021.10.21end*/
 body{font-family: 'Noto Sans KR', sans-serif;}
 
 /* layout */
@@ -49,11 +49,12 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .section1 .imte_box .item{width: 200px;height: 300px;margin: 0 20px; transition: all 0.6s;}
 .section1 .imte_box .item:hover{transform: translateY(-20px);}
 
-.section1 .imte_box .item .img_box{width: 90px;height: 90px; margin-left: 50%; transform: translateX(-50%);}
-.section1 .imte_box .item1 .img_box{background: url(../img/main/section1_1.png) no-repeat center / cover;}
+.section1 .imte_box .item .img_box{width: 90px;height: 90px; margin-left: 50%; transform: translateX(-50%); position: relative;}
+.section1 .imte_box .item .img_box i{font-size: 70px; color: #fff; position: absolute ;top: 50%;left: 50%; transform: translate(-50%,-50%);}
+/* .section1 .imte_box .item1 .img_box{background: url(../img/main/section1_1.png) no-repeat center / cover;}
 .section1 .imte_box .item2 .img_box{background: url(../img/main/section1_2.png) no-repeat center / cover;}
 .section1 .imte_box .item3 .img_box{background: url(../img/main/section1_3.png) no-repeat center / cover;}
-.section1 .imte_box .item4 .img_box{background: url(../img/main/section1_4.png) no-repeat center / cover;}
+.section1 .imte_box .item4 .img_box{background: url(../img/main/section1_4.png) no-repeat center / cover;} */
 
 .section1 .imte_box .item .text_box{text-align: center; color: #fff; margin-top: 15px;}
 .section1 .imte_box .item .text_box h3{font-size: 25px;font-weight: bold;}
@@ -69,7 +70,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .section2 .text_box{color: #fff; padding-top: 230px; margin-left: 105px; }
 .section2 .text_box h2{font-size: 30px;font-weight: 500;margin-bottom: 60px;transform: translateY(100%); opacity: 0; transition: all 1.8s;}
 #section2.active .section2 .text_box h2{transform: translateY(0); opacity: 1;}
-.section2 .text_box p{font-size: 25px;font-weight: 300; transform: translateY(100%);  opacity: 0; transition: all 2.2s}
+.section2 .text_box p{font-size: 25px;font-weight: 300; transform: translateY(100%);  opacity: 0; transition: all 2.2s;}
 #section2.active .section2 .text_box p{transform: translateY(0); opacity: 1; transition-delay: 0.5s;}
 
 .section2 .itex_box{position: absolute; top: 125px; right: 105px;}
@@ -149,6 +150,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
     /* section2 */
     #section2{height: 900px;}
     .section2 .text_box{padding-top: 150px; margin-left: 10px; }
+    .section2 .text_box p{font-size: 22px;}
     .section2 .itex_box{top: 170px; right: 10px;}
 
     /* section4 */

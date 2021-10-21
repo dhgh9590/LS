@@ -19,7 +19,7 @@
     <script src="../js/sub.js"></script>
 
 </head>
-<!-- 2021.10.19 end-->
+<!-- 2021.10.21end-->
 <body>
     <? include "../nav/nav.html";?>
     <header id="header">
@@ -112,7 +112,7 @@
                     </div>
                     <div class="item_list">
                         <span class="line1 line"></span>
-                        <div class="item item1">
+                        <div class="cont cont1">
                             <div class="img_box">
                                 <img src="../img/sub4/section1_1.jpg" alt="">
                             </div>
@@ -129,8 +129,8 @@
                                 </ul>
                             </div>
                         </div>
-                        <span class="item item2"></span>
-                        <div class="item item2">
+                        <span class="line2 line"></span>
+                        <div class="cont cont2">
                             <div class="text_box">
                                 <h3>국제화 교육</h3>
                                 <p>리더십 향상과 글로벌 리더 양성을 위해 직급별 필수과정과 다양한 글로벌 과정을 운영하고 있습니다.</p>
@@ -149,8 +149,8 @@
                                 <img src="../img/sub4/section1_2.jpg" alt="">
                             </div>
                         </div>
-                        <span class="item item3"></span>
-                        <div class="item item3">
+                        <span class="line3 line"></span>
+                        <div class="cont cont3">
                             <div class="img_box">
                                 <img src="../img/sub4/section1_3.jpg" alt="">
                             </div>
@@ -166,8 +166,8 @@
                                 </ul>
                             </div>
                         </div>
-                        <span class="item item4"></span>
-                        <div class="item item4">
+                        <span class="line4 line"></span>
+                        <div class="cont cont4">
                             <div class="text_box">
                                 <h3>신입사원 집중 교육</h3>
                                 <p>신입사원 육성 프로그램인 ‘OPEN 프로그램’은 신입사원이 갖춰야 할 4대 가치의 약자로,<br>
@@ -206,20 +206,19 @@
 
         $(window).scroll(function(){
             let scrollTop = $(window).scrollTop() + $(window).height();
-            let item = $(".item_list > .item");
+            let item = $(".item_list .cont");
             
 
             for(let i=1; i <= item.length; i++){
 
-                if(scrollTop >= $(".item_list > .item"+i).offset().top){
-                    $(".item_list > .item"+i).addClass("active");
+                if(scrollTop >= $(".item_list > .cont"+i).offset().top){
+                    $(".item_list > .cont"+i).addClass("active");
                     $(".line"+i).addClass("active");
                 }
             }
 
 
         });
-
 
     </script>
     

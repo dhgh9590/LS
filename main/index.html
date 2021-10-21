@@ -20,7 +20,7 @@
 
 
 </head>
-<!-- 2021.10.19 end-->
+<!-- 2021.10.21end-->
 <body>
     <? include "../nav/nav.html";?>
 
@@ -99,7 +99,7 @@
                     <h2>SOLUTION</h2>
                     <div class="imte_box">
                         <div class="item item1">
-                            <div class="img_box"></div>
+                            <div class="img_box"><i class="fas fa-charging-station"></i></div>
                             <div class="text_box">
                                 <h3>전력</h3>
                                 <p>전력 케이블 분야에서 세계적 수준의 기술력을 보유</p>
@@ -109,7 +109,7 @@
                             </div>
                         </div>
                         <div class="item item2">
-                            <div class="img_box"></div>
+                            <div class="img_box"><i class="fas fa-wind"></i></div>
                             <div class="text_box">
                                 <h3>풍력</h3>
                                 <p>신재생 에너지의 대표주자 풍력발전!</p>
@@ -119,7 +119,7 @@
                             </div>
                         </div>
                         <div class="item item3">
-                            <div class="img_box"></div>
+                            <div class="img_box"><i class="fas fa-subway"></i></div>
                             <div class="text_box">
                                 <h3>철도</h3>
                                 <p>철도의 원활한 운행을 위해 안정적으로 전력을 공급</p>
@@ -129,7 +129,7 @@
                             </div>
                         </div>
                         <div class="item item4">
-                            <div class="img_box"></div>
+                            <div class="img_box"><i class="fas fa-ship"></i></div>
                             <div class="text_box">
                                 <h3>선박</h3>
                                 <p>한정된 공간에서도 원활하게 전력과 통신 시스템을 구축</p>
@@ -284,7 +284,7 @@
 
     
     <script>
-        $(window).scroll(function(){
+        $(window).scroll(()=>{
             let scrollTop = $(window).scrollTop() + $(window).height() / 2;
             let sec = $(".sec");
             
@@ -305,10 +305,10 @@
         });
 
 
-        $(".section2 .itex_box .item").mouseenter(function(){
-            $(this).addClass("active");
-        }).mouseleave(function(){
-            $(this).removeClass("active");
+        $(".section2 .itex_box .item").mouseenter((e)=>{
+            $(e.currentTarget).addClass("active");
+        }).mouseleave((e)=>{
+            $(e.currentTarget).removeClass("active");
         });
 
 

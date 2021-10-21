@@ -19,7 +19,7 @@
     <script src="../js/sub.js"></script>
 
 </head>
-<!-- 2021.10.19-->
+<!-- 2021.10.21end-->
 <body>
     <? include "../nav/nav.html";?>
     <header id="header">
@@ -425,7 +425,6 @@
 
         questions.click(function(){
             let QueIndex = $(this).index();
-            console.log(QueIndex);
 
             $(this).next().slideToggle().siblings(".answer").slideUp();
             $(this).toggleClass("active").siblings().removeClass("active");
